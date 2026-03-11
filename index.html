@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Kumar | Pro Frontend Developer & Freelancer</title>
+    <meta name="description"
+        content="Professional portfolio of Aditya Kumar, a Frontend Web Developer building high-end responsive websites, web tools, and custom digital solutions.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon Fix -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <meta name="google-site-verification" content="FhyTFOWd08nI_rrnLu4zJAEiwoaA0BSU2SuleUQ0eh8" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="AR Logo" class="nav-logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-pattern" style="background-image: url('assets/hero-pattern.png');"></div>
+        <div class="hero-content">
+            <h1 class="reveal" id="dynamic-hero-title">Crafting <span class="gradient-text">Clean, Responsive</span> and
+                Modern Web Experiences</h1>
+            <h2 class="reveal">I'm Aditya Kumar, a <span id="typing-text"></span></h2>
+            <p class="reveal" id="dynamic-hero-desc">I am dedicated to building high-quality, responsive websites and
+                practical web tools using clean, modern code.</p>
+            <div class="hero-btns reveal">
+                <a href="#projects" class="btn btn-primary">Explore My Work <i class="fas fa-arrow-right"></i></a>
+                <a href="#contact" class="btn btn-glass">Let's Talk</a>
+            </div>
+        </div>
+        <div class="hero-scroll reveal">
+            <div class="mouse"></div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-container reveal">
+                    <div class="about-image glass">
+                        <i class="fab fa-html5 tech-icon-1"></i>
+                        <i class="fab fa-css3-alt tech-icon-2"></i>
+                        <i class="fab fa-js tech-icon-3"></i>
+                        <img src="assets/profile.png" alt="Aditya Kumar | Frontend Developer">
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2 class="section-tag reveal">About Me</h2>
+                    <h3 class="reveal" id="dynamic-about-title">Building Modern, Responsive Webpages with <span
+                            class="gradient-text">Precision</span></h3>
+                    <p class="reveal" id="dynamic-about-desc">As an aspiring Frontend Developer and a fresher in the
+                        tech world, I am passionate about learning and building modern web experiences. I've spent my
+                        time crafting various projects to sharpen my skills in HTML, CSS, and JavaScript. I am focused
+                        on delivering clean, responsive code and am eager to contribute to real-world projects with
+                        precision and dedication.</p>
+                    <div class="about-stats reveal" id="dynamic-about-stats">
+                        <div class="stat-card glass">
+                            <h4>3+</h4>
+                            <p>Real-world Projects</p>
+                        </div>
+                        <div class="stat-card glass">
+                            <h4>100%</h4>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary reveal">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-tag">Expertise</h2>
+                <h3>My Technical <span class="gradient-text">Skillset</span></h3>
+            </div>
+            <div class="skills-grid" id="dynamic-skills-grid">
+                <!-- Frontend Detailed -->
+                <div class="skill-group glass reveal">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <h4>HTML5 Expert</h4>
+                    <p>Semantic, accessible, and SEO-optimized structures for modern web applications.</p>
+                </div>
+                <div class="skill-group glass reveal">
+                    <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                    <h4>CSS3 Styling</h4>
+                    <p>Advanced layouts (Grid/Flexbox), animations, and premium responsive design.</p>
+                </div>
+                <div class="skill-group glass reveal">
+                    <div class="skill-icon"><i class="fab fa-js"></i></div>
+                    <h4>JavaScript ES6+</h4>
+                    <p>Building complex logic, interactive features, and seamless user experiences.</p>
+                </div>
+            </div>
+            <div class="skills-secondary-grid reveal">
+                <div class="skill-tag-group glass">
+                    <h5><i class="fas fa-tools"></i> Professional Tools:</h5>
+                    <div class="tags">
+                        <span>GitHub</span> <span>VS Code</span>
+                    </div>
+                </div>
+                <div class="skill-tag-group glass">
+                    <h5><i class="fas fa-magic"></i> Creative Skills:</h5>
+                    <div class="tags">
+                        <span>Responsive Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-tag reveal">Portfolio</h2>
+                <h3 class="reveal">Featured <span class="gradient-text">Recent Works</span></h3>
+            </div>
+            <div class="projects-grid" id="dynamic-projects-grid">
+                <!-- Project 1 (Portfolio) -->
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="assets/logo.png" alt="Portfolio Webpage"
+                            style="object-fit: contain; padding: 20px; background: #16161a;">
+                        <div class="project-overlay">
+                            <a href="https://25bcae03-gif.github.io/portfolio_project/" class="overlay-link"
+                                target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="p-category">Personal Branding</span>
+                        <h4>Professional Portfolio System</h4>
+                        <p>A sophisticated portfolio architecture designed for high-end client conversions.</p>
+                        <div class="p-links">
+                            <a href="https://25bcae03-gif.github.io/portfolio_project/" target="_blank">Live Project <i
+                                    class="fas fa-chevron-right"></i></a>
+                            <a href="#" class="github-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 (Calculator) -->
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="assets/calculator-preview.png" alt="Modern Calculator">
+                        <div class="project-overlay">
+                            <a href="calculator-project/index.html" class="overlay-link" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="p-category">Web Utility</span>
+                        <h4>Glassmorphism Utility Engine</h4>
+                        <p>A high-performance calculator tool with a modern frosted-glass interface.</p>
+                        <div class="p-links">
+                            <a href="calculator-project/index.html" target="_blank">Live Project <i
+                                    class="fas fa-chevron-right"></i></a>
+                            <a href="#" class="github-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 (Cafe Website) -->
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="assets/cafe-preview.png" alt="Premium Cafe Website">
+                        <div class="project-overlay">
+                            <a href="https://adityakumarweb.github.io/cafe_website/" class="overlay-link"
+                                target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="p-category">Business Website</span>
+                        <h4>Premium Bistro & Cafe</h4>
+                        <p>A high-end, responsive website for a modern cafe with online ordering and menu features.</p>
+                        <div class="p-links">
+                            <a href="https://adityakumarweb.github.io/cafe_website/" target="_blank">Live Preview <i
+                                    class="fas fa-chevron-right"></i></a>
+                            <a href="#" class="github-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-tag reveal">Services</h2>
+                <h3 class="reveal">What I Do for <span class="gradient-text">My Clients</span></h3>
+            </div>
+            <div class="services-grid" id="dynamic-services-grid">
+                <div class="service-item glass reveal">
+                    <i class="fas fa-code"></i>
+                    <h4>Custom Web Development</h4>
+                    <p>I build high-quality, professional webpages using HTML, CSS, and JavaScript, tailored exactly to
+                        your business needs.</p>
+                </div>
+                <div class="service-item glass reveal">
+                    <i class="fas fa-calendar-check"></i>
+                    <h4>On-Time Delivery</h4>
+                    <p>I value your time. I guarantee to deliver your project on the exact date we discuss and agree
+                        upon—no delays.</p>
+                </div>
+                <div class="service-item glass reveal">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h4>Fully Responsive Design</h4>
+                    <p>Every project I build is 100% responsive, ensuring your website looks and works perfectly on
+                        mobile, tablet, and desktop.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-card glass reveal">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2 class="section-tag reveal">Contact</h2>
+                        <h3 class="reveal">Let's Build Something <span class="gradient-text">Amazing</span></h3>
+                        <p class="reveal" id="dynamic-contact-desc">Currently accepting new projects and freelance
+                            opportunities. I'll get back to you as soon as possible, usually within 24 hours.</p>
+                        <ul class="contact-methods">
+                            <li><i class="fas fa-envelope"></i> <span>webwithaditya@gmail.com</span></li>
+                            <li><i class="fab fa-linkedin"></i> <a href="#" target="_blank">LinkedIn Profile</a></li>
+                            <li><i class="fab fa-youtube"></i> <a href="https://youtube.com/@webwithaditya"
+                                    target="_blank">webwithaditya (YouTube)</a></li>
+                            <li><i class="fab fa-instagram"></i> <a href="https://instagram.com/webwithaditya"
+                                    target="_blank">webwithaditya (Instagram)</a></li>
+                            <li><i class="fab fa-github"></i> <a href="#" target="_blank">GitHub Profile</a></li>
+                            <li><i class="fas fa-map-marker-alt"></i> <span>Remote / India</span></li>
+                        </ul>
+                    </div>
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" placeholder="Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Project Details" rows="5"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" id="submit-btn" class="btn btn-primary">Send Proposal <i
+                                    class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">ADITYA<span>.</span></div>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <p>&copy; 2026 Aditya Kumar. Built with precision using Vanilla Web Stack.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- Firebase SDK (Modular) -->
+    <script type="module" src="script.js"></script>
+
+    <!-- Failsafe & Core UI Logic (Non-Modular for Reliability) -->
+    <script>
+        // --- 1. Scroll Reveal Logic ---
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        window.triggerReveal = function () {
+            document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+        };
+
+        // --- 2. Typing Effect Logic ---
+        window.startTyping = function (professions) {
+            const typingElement = document.getElementById('typing-text');
+            if (!typingElement) return;
+            let profIndex = 0, charIndex = 0, isDeleting = false, typingSpeed = 100;
+            function type() {
+                const currentProf = professions[profIndex];
+                if (isDeleting) {
+                    typingElement.textContent = currentProf.substring(0, charIndex - 1);
+                    charIndex--;
+                    typingSpeed = 50;
+                } else {
+                    typingElement.textContent = currentProf.substring(0, charIndex + 1);
+                    charIndex++;
+                    typingSpeed = 150;
+                }
+                if (!isDeleting && charIndex === currentProf.length) {
+                    isDeleting = true;
+                    typingSpeed = 2000;
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    profIndex = (profIndex + 1) % professions.length;
+                    typingSpeed = 500;
+                }
+                setTimeout(type, typingSpeed);
+            }
+            type();
+        };
+
+        // --- 3. Sticky Navbar ---
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                navbar.classList.add('glass');
+                navbar.style.padding = '1rem 5%';
+            } else {
+                navbar.classList.remove('glass');
+                navbar.style.padding = '1.5rem 5%';
+            }
+        });
+
+        // --- 4. Initialization ---
+        document.addEventListener('DOMContentLoaded', () => {
+            window.triggerReveal();
+            // Default roles if script.js fails to load
+            if (!window.firebaseInjected) {
+                window.startTyping(['Frontend Web Developer', 'Freelance Web Expert', 'UI/UX Enthusiast']);
+            }
+        });
+
+        // Failsafe: Force reveal after 2s if everything still hidden
+        setTimeout(() => {
+            document.querySelectorAll('.reveal').forEach(el => el.classList.add('active'));
+        }, 2000);
+    </script>
+</body>
+
+</html>
