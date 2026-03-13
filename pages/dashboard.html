@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | webwithaditya</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">webwith<span>aditya</span></a>
+            <div class="nav-btns">
+                <span id="user-name" style="margin-right: 20px; font-weight: 600;">Welcome, Aditya!</span>
+                <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+                <a href="../index.html" id="logout-btn" class="btn btn-primary" style="padding: 10px 24px;">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container" style="padding-top: 15rem; padding-bottom: 10rem;">
+        <div class="section-header">
+            <h2>Your <span class="gradient-text">Learning Center</span></h2>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 3fr; gap: 30px;">
+            <aside class="glass" style="padding: 20px;">
+                <ul style="display: grid; gap: 15px;">
+                    <li><a href="#" class="btn btn-primary" style="width: 100%;">My Tutorials</a></li>
+                    <li><a href="#" class="btn btn-outline" style="width: 100%;">Downloaded Codes</a></li>
+                    <li><a href="#" class="btn btn-outline" style="width: 100%;">Account Settings</a></li>
+                </ul>
+            </aside>
+            <section class="glass" style="padding: 30px;">
+                <h3 style="margin-bottom: 20px;">Active Tutorials</h3>
+                <div style="margin-bottom: 40px;">
+                    <p>No active tutorials yet. <a href="tutorials.html" style="color: var(--primary-color);">Start learning now!</a></p>
+                </div>
+
+                <h3 style="margin-bottom: 20px;">Download Source Codes</h3>
+                <div id="source-code-grid">
+                    <!-- Rendered via JS -->
+                </div>
+            </section>
+        </div>
+    </main>
+    <script type="module" src="../js/script.js"></script>
+</body>
+</html>
