@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: #0d0d0f;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.back-link-fixed {
+    position: fixed;
+    top: 25px;
+    left: 40px;
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    z-index: 1001; /* Above sticky header */
+}
+
+.back-link-fixed:hover {
+    color: #6366f1;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background: #141417;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #6366f1;
+}
+
+.links a {
+    color: #94a3b8;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #6366f1;
+}
+
+.hero {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.cta {
+    display: inline-block;
+    background: #6366f1;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 30px;
+    font-weight: 600;
+    box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.4);
+}
+
+section {
+    padding: 80px 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.p-card {
+    background: #16161a;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: #94a3b8;
+}

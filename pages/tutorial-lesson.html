@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Lesson | webwithaditya</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">webwith<span>aditya</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="tutorials.html" class="active">Tutorials</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-btns">
+                <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+                <a href="https://t.me/webwithaditya" target="_blank" class="btn btn-primary" style="padding: 10px 24px;">Join Community</a>
+                <div class="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container" style="padding-top: 15rem; padding-bottom: 100px;">
+        <div class="lesson-header" style="margin-bottom: 40px;">
+            <a href="tutorials.html" style="color: var(--primary-color); display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+                <i class="fas fa-arrow-left"></i> Back to Tutorials
+            </a>
+            <h1 id="lesson-title">Coding <span class="gradient-text">Tutorial</span></h1>
+        </div>
+
+        <div class="lesson-content" style="display: grid; grid-template-columns: 2fr 1fr; gap: 40px;">
+            <div class="main-video">
+                <div class="video-container glass" style="border-radius: 15px; overflow: hidden;">
+                    <iframe id="lesson-iframe" src="" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="explanation-text" style="margin-top: 30px;">
+                    <h3>Explanation</h3>
+                    <p id="lesson-desc">In this lesson, we cover the essential steps to master this topic. Watch the video above for a detailed walkthrough and follow along with the code snippets below.</p>
+                    
+                    <h3 style="margin-top: 30px;">Code Snippet</h3>
+                    <pre class="glass" style="padding: 20px; overflow-x: auto; margin-top: 15px; font-family: monospace;">
+// Source code will be available in the download section
+console.log("Happy Coding!");
+                    </pre>
+                </div>
+            </div>
+
+            <aside class="lesson-sidebar">
+                <div class="glass" style="padding: 20px; margin-bottom: 30px;">
+                    <h3>Resources</h3>
+                    <div style="margin-top: 15px; display: grid; gap: 10px;">
+                        <a href="dashboard.html" class="btn btn-primary" style="width: 100%; text-align: center;">Download Source Code</a>
+                        <a href="https://youtube.com/@webwithaditya" target="_blank" class="btn btn-outline" style="width: 100%; text-align: center;">Subscribe on YouTube</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="logo">webwith<span>aditya</span></div>
+                <p style="margin-top: 20px; color: #94a3b8;">Building modern web experiences and empowering developers through tutorials.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul style="color: #94a3b8; display: grid; gap: 10px;">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Me</h4>
+                <div style="display: flex; gap: 20px; font-size: 1.5rem;">
+                    <a href="https://youtube.com/@webwithaditya" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://instagram.com/webwithaditya" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://t.me/webwithaditya" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a href="https://github.com/adityakumarweb" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 webwithaditya. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module">
+        import videos from '../js/videos.js';
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.search || window.location.search);
+            const videoId = urlParams.get('v');
+            
+            if (videoId) {
+                const videoData = videos.find(v => v.youtubeId === videoId);
+                const iframe = document.getElementById('lesson-iframe');
+                const title = document.getElementById('lesson-title');
+                const desc = document.getElementById('lesson-desc');
+                
+                iframe.src = `https://www.youtube.com/embed/${videoId}`;
+                if (videoData) {
+                    title.innerHTML = `${videoData.title.split(' ').slice(0, -1).join(' ')} <span class="gradient-text">${videoData.title.split(' ').slice(-1)}</span>`;
+                    desc.textContent = videoData.description;
+                }
+            }
+        });
+    </script>
+    <script type="module" src="../js/script.js"></script>
+</body>
+</html>
