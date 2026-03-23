@@ -1,5 +1,10 @@
 const videos = [
     {
+        title: "Full Stack Portfolio Website | HTML CSS JS + Node.js + PostgreSQL",
+        youtubeId: "dYkAfY0nDDI",
+        description: "In this video, I built a complete Full Stack Portfolio Website with a working backend using HTML, CSS, JS, Node.js, and PostgreSQL. Step by step guide to building a professional portfolio."
+    },
+    {
         title: "Text to Speech Converter using HTML CSS & JavaScript",
         youtubeId: "xdioaSslrXM",
         description: "In this video, I built a Text to Speech Converter using HTML, CSS, and JavaScript. This project uses the Web Speech API to convert written text into natural-sounding speech."
