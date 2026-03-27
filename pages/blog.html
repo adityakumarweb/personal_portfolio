@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | webwithaditya</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">webwith<span>aditya</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <div class="nav-btns">
+                <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+                <div class="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container" style="padding-top: 15rem; padding-bottom: 10rem;">
+        <div class="section-header">
+            <span class="section-tag">Learning</span>
+            <h2>Coding <span class="gradient-text">Blog</span></h2>
+            <p>Articles on web development, tech trends, and career tips.</p>
+        </div>
+        
+        <div class="projects-grid">
+            <div class="project-card glass reveal">
+                <div class="project-img" style="height: 200px; background: var(--primary-glow); display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-newspaper" style="font-size: 4rem; color: var(--primary);"></i>
+                </div>
+                <div class="project-info">
+                    <span style="font-size: 0.8rem; color: var(--primary);">COMING SOON</span>
+                    <h4 style="margin-top: 10px;">Modern CSS Layouts with Grid & Flexbox</h4>
+                    <p>Learn how to build complex responsive layouts with ease using modern CSS techniques.</p>
+                    <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+                </div>
+            </div>
+            
+            <div class="project-card glass reveal">
+                <div class="project-img" style="height: 200px; background: var(--primary-glow); display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-rocket" style="font-size: 4rem; color: var(--primary);"></i>
+                </div>
+                <div class="project-info">
+                    <span style="font-size: 0.8rem; color: var(--primary);">COMING SOON</span>
+                    <h4 style="margin-top: 10px;">JavaScript Tips for Faster Development</h4>
+                    <p>Boost your productivity with these essential JavaScript shortcuts and best practices.</p>
+                    <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">webwith<span>aditya</span></div>
+            <p>&copy; 2026 webwithaditya. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | webwithaditya</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body style="display: flex; align-items: center; justify-content: center; min-height: 100vh; background: radial-gradient(circle at top right, var(--primary-glow), transparent 40%);">
+    <div class="container">
+        <div class="contact-card glass reveal" style="max-width: 450px; margin: 0 auto; padding: 3rem;">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <a href="../index.html" class="logo" style="justify-content: center; font-size: 1.8rem;">webwith<span>aditya</span></a>
+                <h2 style="margin-top: 1rem;">Welcome Back</h2>
+                <p style="color: var(--text-muted);">Login to access your dashboard</p>
+            </div>
+            
+            <form id="login-form" class="contact-form">
+                <div class="form-group" style="margin-bottom: 1.5rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Email Address</label>
+                    <input type="email" placeholder="name@example.com" required style="background: var(--bg-card);">
+                </div>
+                <div class="form-group" style="margin-bottom: 2rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Password</label>
+                    <input type="password" placeholder="••••••••" required style="background: var(--bg-card);">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Login to Account</button>
+            </form>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <p style="color: var(--text-muted);">Don't have an account? <a href="signup.html" style="color: var(--primary); font-weight: 600; text-decoration: none;">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="../js/script.js"></script>
+</body>
+</html>

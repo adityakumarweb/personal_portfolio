@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials | webwithaditya</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">webwith<span>aditya</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="tutorials.html" class="active">Tutorials</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <div class="nav-btns">
+                <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+                <a href="https://t.me/webwithaditya" target="_blank" class="btn btn-primary" style="padding: 10px 24px;">Join Community</a>
+                <div class="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container" style="padding-top: 15rem; padding-bottom: 10rem;">
+        <div class="section-header">
+            <span class="section-tag">Courses</span>
+            <h2>Latest <span class="gradient-text">Tutorials</span></h2>
+            <p>Master web development through our project-based video series.</p>
+            <div style="margin-top: 2rem; max-width: 500px; margin-left: auto; margin-right: auto;">
+                <input type="text" id="tutorial-search" placeholder="Search tutorials (e.g. HTML, JavaScript)..." style="width: 100%; padding: 1rem 1.5rem; border-radius: 50px; border: 1px solid var(--glass-border); background: var(--bg-card); color: var(--text-main);">
+            </div>
+        </div>
+        <div id="latest-tutorials-grid" class="projects-grid">
+            <!-- Dynamic Content -->
+        </div>
+    </main>
+
+    <!-- Email Subscription Section -->
+    <section id="newsletter" class="container" style="margin-top: 5rem;">
+        <div class="contact-card glass reveal" style="text-align: center; padding: 4rem;">
+            <h3>Join the <span class="gradient-text">webwithaditya</span> Community</h3>
+            <p>Get latest tutorials and source code directly in your inbox.</p>
+            <form id="subscribe-form" style="margin-top: 2rem; display: flex; gap: 1rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                <input type="email" placeholder="Enter your email" required style="flex: 1; padding: 1.2rem; border-radius: 12px; border: 1px solid var(--glass-border); background: var(--bg-main);">
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">webwith<span>aditya</span></div>
+            <div class="footer-socials">
+                <a href="https://youtube.com/@webwithaditya" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://instagram.com/webwithaditya" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://t.me/webwithaditya" target="_blank"><i class="fab fa-telegram"></i></a>
+            </div>
+            <p>&copy; 2026 webwithaditya. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/script.js"></script>
+</body>
+</html>

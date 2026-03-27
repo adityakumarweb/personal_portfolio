@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | webwithaditya</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">webwith<span>aditya</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+            <div class="nav-btns">
+                <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+                <button id="logout-btn" class="btn btn-glass" style="padding: 10px 20px;">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container" style="padding-top: 10rem; padding-bottom: 5rem;">
+        <div class="section-header" style="text-align: left; margin-bottom: 3rem;">
+            <h2 id="user-name">Welcome, <span class="gradient-text">Developer!</span></h2>
+            <p>Access your saved tutorials and downloaded source code.</p>
+        </div>
+
+        <div class="about-grid" style="grid-template-columns: 1fr 1fr; gap: 2rem;">
+            <!-- Continue Learning -->
+            <div class="glass" style="padding: 2rem;">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                    <i class="fas fa-play-circle" style="font-size: 1.5rem; color: var(--primary);"></i>
+                    <h3 style="margin: 0;">Continue Learning</h3>
+                </div>
+                <div id="dashboard-learning">
+                    <p style="color: var(--text-muted);">You haven't started any tutorials yet.</p>
+                </div>
+            </div>
+
+            <!-- Download History -->
+            <div class="glass" style="padding: 2rem;">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                    <i class="fas fa-download" style="font-size: 1.5rem; color: var(--primary);"></i>
+                    <h3 style="margin: 0;">Recent Downloads</h3>
+                </div>
+                <div id="dashboard-downloads">
+                    <p style="color: var(--text-muted);">No downloads yet.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">webwith<span>aditya</span></div>
+            <p>&copy; 2026 webwithaditya. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/script.js"></script>
+</body>
+</html>
