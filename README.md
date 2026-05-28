@@ -34,6 +34,12 @@ A modern and responsive personal portfolio website built to showcase my projects
 
 ![Portfolio Screenshot](assets/screenshot.png)
 
+### Tech Stack
+![Projects](assets/screenshot1.png)
+
+### Contact Section
+![Contact](assets/contact.png)
+
 ---
 
 ## ⚡ Getting Started
