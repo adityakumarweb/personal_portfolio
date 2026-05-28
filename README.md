@@ -61,7 +61,7 @@ Run the project by opening `index.html` in your browser.
 
 - GitHub: https://github.com/adityakumarweb  
 - Portfolio: https://adityakumarweb.github.io/personal_portfolio/  
-
+- Email: webwithaditya@gmail.com
 ---
 
 ## ⭐ Support
